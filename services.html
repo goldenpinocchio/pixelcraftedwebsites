@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Pixel Crafted Websites</title>
+  <meta name="description" content="Web design, development, hosting & free digital marketing consulting. Starting at $250 with first year hosting included.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23c9ff47'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-weight='bold' fill='black'>P</text></svg>">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">P</span>
+        Pixel Crafted
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a href="contact.html" class="btn btn-primary">Get Started</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="min-height: 70vh; padding-top: calc(var(--nav-height) + 3rem);">
+    <div class="hero-inner" style="grid-template-columns: 1fr 1fr; gap: 5rem;">
+      <div>
+        <span class="hero-label">What We Build</span>
+        <h1>Your website,<br>crafted to<br><em>convert</em></h1>
+        <p class="hero-desc">From custom designs to rock-solid hosting — everything you need to show up online and grow. And yes, digital marketing consulting is free with every project.</p>
+        <div class="hero-actions">
+          <a href="#packages" class="btn btn-primary">See Pricing</a>
+          <a href="portfolio.html" class="btn btn-outline">View Themes</a>
+        </div>
+      </div>
+      <div class="hero-visual" style="aspect-ratio: 1; border-radius: 50%; max-width: 420px;">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Web design workspace" style="border-radius: 50%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE CARDS -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="section-inner">
+      <span class="section-label">Core Services</span>
+      <h2 class="section-title">Everything your business needs to own the web</h2>
+      <p class="section-desc">No fluff. No cookie-cutter templates. Just thoughtful design, clean code, and real strategy — built around what your business actually needs.</p>
+
+      <div class="grid-3" style="margin-top: 3rem;">
+        <div class="card">
+          <div class="card-icon">✦</div>
+          <h3 class="card-title">Custom Web Design</h3>
+          <p class="card-desc">Every project starts from scratch. We learn your business, your customers, and your goals — then design a site that actually represents you. No template reskins.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">Responsive Development</h3>
+          <p class="card-desc">Built to work flawlessly on phones, tablets, and desktops. Fast loading, accessible, and optimized for search engines from day one.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">☁</div>
+          <h3 class="card-title">Reliable Hosting</h3>
+          <p class="card-desc">Your site lives on premium infrastructure so it's almost never down. SSL certificates, daily backups, and a staging environment included.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3 class="card-title">SEO Setup & Optimization</h3>
+          <p class="card-desc">Proper meta tags, structured data, site speed optimization, and Google business profile setup. Your site gets found, not hidden.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">Free Marketing Consulting</h3>
+          <p class="card-desc">Every client gets complimentary digital marketing advice. Want to know how to get more leads from your website? Let's talk strategy.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3 class="card-title">Ongoing Maintenance</h3>
+          <p class="card-desc">Need updates, changes, or a redesign later? I'm your on-call web partner. Retainers available, or bill-as-you-go — no long-term contracts required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">From idea to launch in weeks, not months</h2>
+
+      <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem;">
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;">
+          <div style="font-family: var(--font-mono); font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1;">01</div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;">Discovery Call</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">We hop on a call (or a detailed message chain — whatever works) and nail down exactly what you need. Your goals, your style, your timeline.</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;">
+          <div style="font-family: var(--font-mono); font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1;">02</div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;">Design & Build</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">I craft your custom design and build it into a fully functional website. You'll see progress and get a staging link to preview everything before it goes live.</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;">
+          <div style="font-family: var(--font-mono); font-size: 2.5rem; font-weight: 700; color: var(--accent); line-height: 1;">03</div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;">Launch & Beyond</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">Once you approve, we push live. Your hosting is set up, SSL is running, and I walk you through everything. Free marketing consulting starts then.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="packages" style="background: var(--bg-secondary);">
+    <div class="section-inner" style="text-align: center;">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title" style="margin-left: auto; margin-right: auto;">Transparent pricing.<br>No surprises.</h2>
+      <p class="section-desc" style="margin-left: auto; margin-right: auto;">Design, development, AND first-year hosting included. Everything you need to launch.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 3rem auto 0; text-align: left;">
+        <!-- Starter -->
+        <div class="card" style="border: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+            <div>
+              <span class="tag" style="margin-bottom: 0.75rem; display: inline-block;">Starter</span>
+              <h3 style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">$250</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">One-time design fee</p>
+            </div>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Custom 1-page website
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Mobile responsive design
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Contact form setup
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Basic SEO foundation
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> 1 year hosting included ($120 value)
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Started</a>
+        </div>
+
+        <!-- Professional -->
+        <div class="card" style="border: 2px solid var(--accent); position: relative;">
+          <div style="position: absolute; top: -1px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #000; font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 0 0 8px 8px;">Most Popular</div>
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem; padding-top: 0.5rem;">
+            <div>
+              <span class="tag" style="margin-bottom: 0.75rem; display: inline-block;">Professional</span>
+              <h3 style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">$500</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">One-time design fee</p>
+            </div>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Custom multi-page website (up to 5 pages)
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Advanced SEO setup + structured data
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Google Business Profile optimization
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Free digital marketing consultation
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Priority turnaround (2–3 weeks)
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> 1 year hosting included ($120 value)
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="card" style="border: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+            <div>
+              <span class="tag" style="margin-bottom: 0.75rem; display: inline-block;">Enterprise</span>
+              <h3 style="font-family: var(--font-display); font-size: 2rem; font-weight: 700;">Custom</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem;">Tailored to your needs</p>
+            </div>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Unlimited pages & custom functionality
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> E-commerce, bookings, or custom integrations
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Full SEO strategy + content recommendations
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Ongoing retainer & priority support
+            </li>
+            <li style="color: var(--text-secondary); font-size: 0.9rem; display: flex; gap: 0.75rem; align-items: start;">
+              <span style="color: var(--accent); font-weight: 700;">✓</span> Monthly marketing check-ins
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width: 100%; justify-content: center; margin-top: 1.5rem;">Let's Talk</a>
+        </div>
+      </div>
+
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 2rem; font-family: var(--font-mono);">
+        Annual hosting after year 1: <strong style="color: var(--text-primary);">$120/year</strong> — or cancel anytime, your site files are always yours.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="section-inner" style="text-align: center; max-width: 680px;">
+      <h2 class="section-title">Not sure which tier fits?</h2>
+      <p class="section-desc" style="margin-left: auto; margin-right: auto;">Book a free 15-minute call and we'll figure out exactly what you need. No pressure, no sales pitch — just honest advice.</p>
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">✦ Pixel Crafted Websites</span>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <span class="footer-copy">© 2026 Pixel Crafted Websites · Columbus, Ohio</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
