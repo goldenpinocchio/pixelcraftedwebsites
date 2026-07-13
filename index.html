@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-style="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +44,9 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" style="min-height: 100vh; position: relative; overflow: hidden;">
-    <!-- Background glow -->
-    <div style="position: absolute; top: -20%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(201,255,71,0.08) 0%, transparent 70%); pointer-events: none;"></div>
-
+  <section class="hero">
     <div class="hero-inner">
-      <div>
+      <div class="hero-content">
         <span class="hero-label">Custom Web Design · Columbus, Ohio</span>
         <h1>Your website,<br>handcrafted<br><em>for your business</em></h1>
         <p class="hero-desc">No templates. No shortcuts. Just thoughtful, custom websites that load fast, look amazing, and actually help your business grow. First-year hosting included with every project.</p>
@@ -57,92 +54,90 @@
           <a href="services.html" class="btn btn-primary">See What's Included</a>
           <a href="portfolio.html" class="btn btn-outline">View Live Demos</a>
         </div>
-        <div style="margin-top: 3rem; display: flex; gap: 2.5rem; flex-wrap: wrap;">
+        <div class="hero-stats">
           <div>
-            <p style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent);">$250</p>
-            <p style="font-size: 0.8rem; color: var(--text-muted);">Starting price</p>
+            <p>$250</p>
+            <p>Starting price</p>
           </div>
           <div>
-            <p style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent);">2–4wk</p>
-            <p style="font-size: 0.8rem; color: var(--text-muted);">Average timeline</p>
+            <p>2–4wk</p>
+            <p>Average timeline</p>
           </div>
           <div>
-            <p style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent);">100%</p>
-            <p style="font-size: 0.8rem; color: var(--text-muted);">Custom design</p>
+            <p>100%</p>
+            <p>Custom design</p>
           </div>
         </div>
       </div>
-      <div class="hero-visual" style="position: relative;">
+      <div class="hero-visual">
         <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80" alt="Web design on screen">
-        <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); border-radius: 10px; padding: 0.9rem 1.2rem; display: flex; align-items: center; gap: 0.75rem;">
-          <div style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite;"></div>
-          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: rgba(255,255,255,0.9);">Live custom builds — not templates</span>
+        <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); border-radius: 8px; padding: 0.75rem 1rem; display: flex; align-items: center; gap: 0.6rem;">
+          <div style="width: 7px; height: 7px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite;"></div>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; color: rgba(255,255,255,0.9);">Live custom builds — not templates</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LOGOS / TRUST BAR -->
-  <section style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 2.5rem clamp(1.5rem, 5vw, 4rem); background: var(--bg-secondary);">
-    <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
-      <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.5rem;">Built for businesses like yours</p>
-      <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; align-items: center;">
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Bakeries & Cafés</span>
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="trust-bar-inner">
+      <p>Built for businesses like yours</p>
+      <div class="industries">
+        <span>Bakeries & Cafés</span>
         <span style="color: var(--border-strong);">·</span>
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Law Firms</span>
+        <span>Law Firms</span>
         <span style="color: var(--border-strong);">·</span>
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Salons & Spas</span>
+        <span>Salons & Spas</span>
         <span style="color: var(--border-strong);">·</span>
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Restaurants</span>
+        <span>Restaurants</span>
         <span style="color: var(--border-strong);">·</span>
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Retail Shops</span>
+        <span>Retail Shops</span>
         <span style="color: var(--border-strong);">·</span>
-        <span style="font-family: var(--font-display); font-size: 1.1rem; color: var(--text-muted); font-style: italic;">Service Businesses</span>
+        <span>Service Businesses</span>
       </div>
     </div>
   </section>
 
   <!-- WHAT MAKES US DIFFERENT -->
   <section class="section">
-    <div class="section-inner">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        <div class="hero-visual" style="aspect-ratio: 1; border-radius: 50%; max-width: 500px;">
-          <img src="https://images.unsplash.com/photo-1507238691740-187a5e850508?w=800&q=80" alt="Designer at work" style="border-radius: 50%;">
-        </div>
-        <div>
-          <span class="section-label">Why Pixel Crafted</span>
-          <h2 class="section-title">Built different,<br>on purpose</h2>
-          <p class="section-desc">Most "affordable" web design is cheap for a reason — templates, overseas labor, no ongoing support. I'm a one-person shop based in Columbus, and I take real pride in every project I touch.</p>
-          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">Your website isn't just a brochure. It's the first impression, the 24/7 salesperson, and the foundation of your online presence. It deserves more than a template.</p>
-          <a href="about.html" class="btn btn-outline">Our Story →</a>
-        </div>
+    <div class="section-inner two-col">
+      <div class="hero-visual hero-visual-circle">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5e850508?w=800&q=80" alt="Designer at work">
+      </div>
+      <div>
+        <span class="section-label">Why Pixel Crafted</span>
+        <h2 class="section-title">Built different,<br>on purpose</h2>
+        <p class="section-desc">Most "affordable" web design is cheap for a reason — templates, overseas labor, no ongoing support. I'm a one-person shop based in Columbus, and I take real pride in every project I touch.</p>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">Your website isn't just a brochure. It's the first impression, the 24/7 salesperson, and the foundation of your online presence. It deserves more than a template.</p>
+        <a href="about.html" class="btn btn-outline">Our Story →</a>
       </div>
     </div>
   </section>
 
   <!-- FEATURE STRIPS -->
-  <section class="section" style="background: var(--bg-secondary); padding: 5rem clamp(1.5rem, 5vw, 4rem);">
-    <div style="max-width: 1280px; margin: 0 auto;">
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden;">
-        <div style="background: var(--bg-card); padding: 2.5rem 2rem; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">🎨</div>
-          <h3 style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem;">100% Custom</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">No templates. Every pixel is crafted for your brand.</p>
+  <section class="section" style="padding-top: 0;">
+    <div class="section-inner">
+      <div class="feature-strip">
+        <div>
+          <div class="feat-icon">🎨</div>
+          <h3>100% Custom</h3>
+          <p>No templates. Every pixel is crafted for your brand.</p>
         </div>
-        <div style="background: var(--bg-card); padding: 2.5rem 2rem; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">⚡</div>
-          <h3 style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem;">Lightning Fast</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Optimized for speed. Google loves fast sites.</p>
+        <div>
+          <div class="feat-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Optimized for speed. Google loves fast sites.</p>
         </div>
-        <div style="background: var(--bg-card); padding: 2.5rem 2rem; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
-          <h3 style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem;">Mobile Perfect</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Flawless on every device. No pinching or zooming.</p>
+        <div>
+          <div class="feat-icon">📱</div>
+          <h3>Mobile Perfect</h3>
+          <p>Flawless on every device. No pinching or zooming.</p>
         </div>
-        <div style="background: var(--bg-card); padding: 2.5rem 2rem; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">💡</div>
-          <h3 style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem;">Free Consulting</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6;">Digital marketing advice included with every build.</p>
+        <div>
+          <div class="feat-icon">💡</div>
+          <h3>Free Consulting</h3>
+          <p>Digital marketing advice included with every build.</p>
         </div>
       </div>
     </div>
@@ -151,7 +146,7 @@
   <!-- PORTFOLIO PREVIEW -->
   <section class="section">
     <div class="section-inner">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
         <div>
           <span class="section-label">Live Theme Demos</span>
           <h2 class="section-title" style="margin-bottom: 0;">See what's possible</h2>
@@ -160,7 +155,7 @@
       </div>
 
       <div class="grid-3">
-        <a href="portfolio.html#bakery" class="portfolio-card">
+        <a href="portfolio.html" class="portfolio-card">
           <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&q=80" alt="Bakery website demo">
           <div class="portfolio-card-overlay">
             <span class="portfolio-card-tag">Food & Beverage</span>
@@ -168,7 +163,7 @@
             <p class="portfolio-card-desc">Warm, artisanal, editorial</p>
           </div>
         </a>
-        <a href="portfolio.html#law" class="portfolio-card">
+        <a href="portfolio.html" class="portfolio-card">
           <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=700&q=80" alt="Law firm website demo">
           <div class="portfolio-card-overlay">
             <span class="portfolio-card-tag">Legal Services</span>
@@ -176,7 +171,7 @@
             <p class="portfolio-card-desc">Corporate, trustworthy, dark accent</p>
           </div>
         </a>
-        <a href="portfolio.html#spa" class="portfolio-card">
+        <a href="portfolio.html" class="portfolio-card">
           <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80" alt="Spa website demo">
           <div class="portfolio-card-overlay">
             <span class="portfolio-card-tag">Wellness & Beauty</span>
@@ -190,31 +185,31 @@
 
   <!-- TESTIMONIAL -->
   <section class="section" style="background: var(--bg-secondary);">
-    <div class="section-inner" style="max-width: 800px; text-align: center;">
-      <span style="font-size: 2.5rem; color: var(--accent); line-height: 1; margin-bottom: 1.5rem; display: block;">"</span>
-      <blockquote style="font-family: var(--font-display); font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-style: italic; line-height: 1.5; margin-bottom: 1.5rem; color: var(--text-primary);">
+    <div class="section-inner cta-section">
+      <span style="font-size: 2rem; color: var(--accent); line-height: 1; margin-bottom: 1rem; display: block;">"</span>
+      <blockquote style="font-family: var(--font-display); font-size: clamp(1.1rem, 3vw, 1.5rem); font-style: italic; line-height: 1.5; margin-bottom: 1.5rem; color: var(--text-primary);">
         I had a website before but it looked amateur and nobody could find me on Google. Pixel Crafted built me something I'm actually proud to show customers — and my Google visibility doubled in three months.
       </blockquote>
       <div>
-        <p style="font-weight: 600; font-size: 0.9rem;">— Local Columbus Restaurant Owner</p>
-        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">Professional package · Restaurant industry</p>
+        <p style="font-weight: 600; font-size: 0.88rem;">— Local Columbus Restaurant Owner</p>
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Professional package · Restaurant industry</p>
       </div>
     </div>
   </section>
 
   <!-- PRICING TEASER -->
   <section class="section">
-    <div class="section-inner" style="text-align: center; max-width: 700px; margin: 0 auto;">
+    <div class="section-inner cta-section">
       <span class="section-label">Pricing</span>
       <h2 class="section-title">Honest pricing.<br>No surprises.</h2>
-      <p class="section-desc" style="margin-left: auto; margin-right: auto;">Design, development, AND first-year hosting — all in one straightforward price. Everything you need to launch and grow.</p>
-      <div style="display: inline-flex; flex-direction: column; gap: 0.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 2.5rem 3rem; text-align: center; margin-bottom: 2rem;">
-        <span style="font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);">Starting at</span>
-        <span style="font-family: var(--font-display); font-size: 4rem; font-weight: 700; line-height: 1; color: var(--text-primary);">$250</span>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">+ first year hosting included ($120 value)</span>
+      <p class="section-desc">Design, development, AND first-year hosting — all in one straightforward price. Everything you need to launch and grow.</p>
+      <div style="display: inline-flex; flex-direction: column; gap: 0.4rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 2rem 2.5rem; text-align: center; margin-bottom: 1.5rem;">
+        <span style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);">Starting at</span>
+        <span style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1; color: var(--text-primary);">$250</span>
+        <span style="font-size: 0.82rem; color: var(--text-muted);">+ first year hosting included ($120 value)</span>
       </div>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="services.html#packages" class="btn btn-primary">Full Pricing Details</a>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="services.html" class="btn btn-primary">Full Pricing Details</a>
         <a href="contact.html" class="btn btn-outline">Get a Free Quote</a>
       </div>
     </div>
@@ -222,11 +217,11 @@
 
   <!-- FINAL CTA -->
   <section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
-    <div class="section-inner" style="text-align: center; max-width: 680px;">
+    <div class="section-inner cta-section">
       <span class="section-label">Ready to start?</span>
       <h2 class="section-title">Your website is the<br>first impression. Make it count.</h2>
-      <p class="section-desc" style="margin-left: auto; margin-right: auto;">Book a free 15-minute call. Tell me about your business, your goals, and your timeline. I'll tell you exactly what I can do for you — no sales pressure.</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <p class="section-desc">Book a free 15-minute call. Tell me about your business, your goals, and your timeline. I'll tell you exactly what I can do for you — no sales pressure.</p>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
         <a href="contact.html" class="btn btn-primary">Schedule Free Consultation</a>
         <a href="portfolio.html" class="btn btn-outline">See Live Demos First</a>
       </div>
@@ -247,22 +242,6 @@
       <span class="footer-copy">© 2026 Pixel Crafted Websites · Columbus, Ohio</span>
     </div>
   </footer>
-
-  <style>
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-    @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr !important; }
-      .hero-visual { display: none; }
-    }
-    @media (max-width: 700px) {
-      section[style*="grid-template-columns: repeat(4"] {
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-    }
-  </style>
 
   <script src="js/main.js"></script>
 </body>

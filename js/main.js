@@ -15,44 +15,38 @@
     if (!VALID_STYLES.includes(style)) style = 'default';
     document.documentElement.setAttribute('data-style', style);
     localStorage.setItem(STORAGE_KEY, style);
-
-    // Update active button
     document.querySelectorAll('.style-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-style') === style);
     });
   }
 
-  // Init on load
   applyStyle(getStoredStyle());
 
-  // Button clicks
   document.querySelectorAll('.style-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      applyStyle(btn.getAttribute('data-style'));
-    });
+    btn.addEventListener('click', () => applyStyle(btn.getAttribute('data-style')));
   });
 })();
 
-// --- Theme Toggle (light/dark) ---
+// --- Theme Toggle ---
 (function () {
   const html = document.documentElement;
   const btn = document.getElementById('themeToggle');
 
-  // Restore saved theme
   const saved = localStorage.getItem('pcw-theme') || 'dark';
   html.setAttribute('data-theme', saved);
 
   function updateIcon() {
     const isLight = html.getAttribute('data-theme') === 'light';
-    btn.querySelector('.sun').style.display = isLight ? 'none' : '';
-    btn.querySelector('.moon').style.display = isLight ? '' : 'none';
+    const sun = btn.querySelector('.sun');
+    const moon = btn.querySelector('.moon');
+    if (sun) sun.style.display = isLight ? 'none' : '';
+    if (moon) moon.style.display = isLight ? '' : 'none';
   }
 
   updateIcon();
 
   btn.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
+    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     html.setAttribute('data-theme', next);
     localStorage.setItem('pcw-theme', next);
     updateIcon();
@@ -67,8 +61,7 @@
   if (hamburger && links) {
     hamburger.addEventListener('click', () => {
       links.classList.toggle('open');
-      const isOpen = links.classList.contains('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-expanded', links.classList.contains('open'));
     });
 
     links.querySelectorAll('a').forEach(a => {
@@ -85,17 +78,13 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('visible');
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.card, .section-label, .section-title, .section-desc').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  document.querySelectorAll('.card, .section-label, .section-title, .section-desc, .reveal').forEach(el => {
     observer.observe(el);
   });
 })();

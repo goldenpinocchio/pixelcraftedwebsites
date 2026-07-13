@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-style="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +44,12 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" style="min-height: 60vh; padding-bottom: 2rem;">
+  <section class="hero" style="min-height: auto; padding-bottom: 2rem;">
     <div class="hero-inner">
-      <div style="grid-column: 1 / -1; max-width: 680px; margin: 0 auto; text-align: center;">
+      <div class="hero-content" style="grid-column: 1 / -1; text-align: center; max-width: 600px; margin: 0 auto;">
         <span class="hero-label">Get in Touch</span>
         <h1>Let's build<br><em>something great</em></h1>
-        <p class="hero-desc" style="margin-left: auto; margin-right: auto;">Whether you know exactly what you want or just have a rough idea, reach out. Free 15-minute consultations — no strings attached.</p>
+        <p class="hero-desc" style="margin: 0 auto;">Whether you know exactly what you want or just have a rough idea, reach out. Free 15-minute consultations — no strings attached.</p>
       </div>
     </div>
   </section>
@@ -57,59 +57,57 @@
   <!-- CONTACT SECTION -->
   <section class="section" style="padding-top: 0;">
     <div class="section-inner">
-      <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; max-width: 1100px; margin: 0 auto;">
+      <div class="contact-grid">
 
         <!-- LEFT: Info -->
         <div>
-          <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem;">Contact Info</h2>
-          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2.5rem;">Fill out the form and I'll get back to you within 24 hours. For urgent matters, email directly.</p>
+          <h2 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Contact Info</h2>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.75rem; font-size: 0.9rem;">Fill out the form and I'll get back to you within 24 hours. For urgent matters, email directly.</p>
 
-          <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem;">
-            <div style="display: flex; align-items: center; gap: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0; width: 40px; height: 40px; font-size: 1rem;">✉</div>
-              <div>
-                <p style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem;">Email</p>
-                <a href="mailto:pinocchiogolden@gmail.com" style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">pinocchiogolden@gmail.com</a>
-              </div>
+          <div class="contact-info-item">
+            <div class="icon">✉</div>
+            <div>
+              <p class="label">Email</p>
+              <a href="mailto:pinocchiogolden@gmail.com" class="value">pinocchiogolden@gmail.com</a>
             </div>
-            <div style="display: flex; align-items: center; gap: 1rem;">
-              <div class="card-icon" style="margin-bottom: 0; width: 40px; height: 40px; font-size: 1rem;">📞</div>
-              <div>
-                <p style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem;">Phone</p>
-                <a href="tel:6147777777" style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">614.777.7777</a>
-              </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📞</div>
+            <div>
+              <p class="label">Phone</p>
+              <a href="tel:6147777777" class="value">614.777.7777</a>
             </div>
-            <div style="display: flex; align-items: center; gap: 1rem;">
-              <div style="width: 40px; height: 40px; background: var(--accent-dim); border: 1px solid var(--accent-glow); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem;">📍</div>
-              <div>
-                <p style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem;">Location</p>
-                <p style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">Columbus, Ohio</p>
-                <p style="color: var(--text-muted); font-size: 0.82rem;">Serving clients nationwide</p>
-              </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📍</div>
+            <div>
+              <p class="label">Location</p>
+              <p class="value">Columbus, Ohio</p>
+              <p class="sub">Serving clients nationwide</p>
             </div>
           </div>
 
-          <div class="divider"></div>
+          <div class="divider" style="margin: 1.5rem 0;"></div>
 
-          <div style="margin-top: 2rem;">
-            <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.75rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em;">Availability</p>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Currently accepting new projects. Typical response time: <strong style="color: var(--text-primary);">within 24 hours.</strong></p>
+          <div>
+            <p class="label" style="font-size: 0.78rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.5rem;">Availability</p>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">Currently accepting new projects. Typical response time: <strong style="color: var(--text-primary);">within 24 hours.</strong></p>
           </div>
 
-          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--accent-dim); border: 1px solid var(--accent-glow); border-radius: var(--radius);">
-            <p style="font-size: 0.9rem; color: var(--text-primary); font-weight: 600; margin-bottom: 0.4rem;">💡 Free Consultation Included</p>
-            <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6;">Every project starts with a free 15-minute call. We'll discuss your goals, timeline, and budget — and I'll give you honest feedback on what's possible.</p>
+          <div class="consultation-card">
+            <p>💡 Free Consultation Included</p>
+            <p>Every project starts with a free 15-minute call. We'll discuss your goals, timeline, and budget — and I'll give you honest feedback on what's possible.</p>
           </div>
         </div>
 
         <!-- RIGHT: Form -->
         <div>
-          <div class="card" style="padding: 2.5rem;">
-            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.25rem;">Send a Message</h3>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem;">Tell me about your project — the more detail, the better.</p>
+          <div class="card" style="padding: 1.5rem;">
+            <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin-bottom: 0.2rem;">Send a Message</h3>
+            <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 1.5rem;">Tell me about your project — the more detail, the better.</p>
 
             <form id="contactForm">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
                 <div class="form-group">
                   <label class="form-label" for="firstName">First Name</label>
                   <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Jane" required>
@@ -159,16 +157,16 @@
                 <label class="form-label" for="message">Tell me about your project</label>
                 <textarea id="message" name="message" class="form-textarea" placeholder="What does your business do? What do you need? Any inspiration or preferences?" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.9rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem;">
                 Send Message
               </button>
-              <p style="text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem;">I'll reply within 24 hours. Usually much faster.</p>
+              <p style="text-align: center; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.6rem;">I'll reply within 24 hours. Usually much faster.</p>
             </form>
 
-            <div id="formSuccess" style="display: none; text-align: center; padding: 3rem 1rem;">
-              <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-              <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Message Sent!</h3>
-              <p style="color: var(--text-secondary);">Thanks for reaching out. I'll get back to you shortly.</p>
+            <div id="formSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">✅</div>
+              <h3 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">Message Sent!</h3>
+              <p style="color: var(--text-secondary); font-size: 0.88rem;">Thanks for reaching out. I'll get back to you shortly.</p>
             </div>
           </div>
         </div>
@@ -179,30 +177,30 @@
 
   <!-- FAQ -->
   <section class="section" style="background: var(--bg-secondary);">
-    <div class="section-inner" style="max-width: 800px;">
+    <div class="section-inner" style="max-width: 720px;">
       <span class="section-label">FAQ</span>
       <h2 class="section-title">Common questions</h2>
 
-      <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0;">
-        <details style="border-bottom: 1px solid var(--border); padding: 1.25rem 0;">
-          <summary style="cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-primary); list-style: none;">How long does a typical project take?</summary>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">Most projects are completed in 2–4 weeks. Simpler one-page sites can be done in as little as 1–2 weeks. Larger or more complex projects may take longer. I'll give you a clear timeline upfront.</p>
+      <div class="faq" style="margin-top: 1.5rem;">
+        <details>
+          <summary>How long does a typical project take?</summary>
+          <p>Most projects are completed in 2–4 weeks. Simpler one-page sites can be done in as little as 1–2 weeks. Larger or more complex projects may take longer. I'll give you a clear timeline upfront.</p>
         </details>
-        <details style="border-bottom: 1px solid var(--border); padding: 1.25rem 0;">
-          <summary style="cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-primary); list-style: none;">Do I own my website after it's built?</summary>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">100%. You own all design files, code, and content. If you cancel hosting, I can help you migrate everything to a new host. Your website is yours forever.</p>
+        <details>
+          <summary>Do I own my website after it's built?</summary>
+          <p>100%. You own all design files, code, and content. If you cancel hosting, I can help you migrate everything to a new host. Your website is yours forever.</p>
         </details>
-        <details style="border-bottom: 1px solid var(--border); padding: 1.25rem 0;">
-          <summary style="cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-primary); list-style: none;">What happens after the first year of hosting?</summary>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">Hosting is $120/year after the first year. You're free to cancel anytime — I'll help you export everything. No contracts, no lock-in.</p>
+        <details>
+          <summary>What happens after the first year of hosting?</summary>
+          <p>Hosting is $120/year after the first year. You're free to cancel anytime — I'll help you export everything. No contracts, no lock-in.</p>
         </details>
-        <details style="border-bottom: 1px solid var(--border); padding: 1.25rem 0;">
-          <summary style="cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-primary); list-style: none;">Can you work with businesses outside of Columbus?</summary>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">Absolutely. Columbus is home base, but I work with businesses all over the country. The process works the same — video calls, messaging, email. Distance isn't a barrier.</p>
+        <details>
+          <summary>Can you work with businesses outside of Columbus?</summary>
+          <p>Absolutely. Columbus is home base, but I work with businesses all over the country. The process works the same — video calls, messaging, email. Distance isn't a barrier.</p>
         </details>
-        <details style="border-bottom: 1px solid var(--border); padding: 1.25rem 0;">
-          <summary style="cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--text-primary); list-style: none;">What does the free marketing consulting include?</summary>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-top: 0.75rem;">I cover the basics: Google Business Profile setup and optimization, SEO recommendations specific to your industry, content ideas, and general digital strategy. It's not a full marketing agency — but it's real, actionable advice from someone who builds sites for a living.</p>
+        <details>
+          <summary>What does the free marketing consulting include?</summary>
+          <p>I cover the basics: Google Business Profile setup and optimization, SEO recommendations specific to your industry, content ideas, and general digital strategy. It's not a full marketing agency — but it's real, actionable advice from someone who builds sites for a living.</p>
         </details>
       </div>
     </div>
@@ -225,13 +223,10 @@
 
   <script src="js/main.js"></script>
   <script>
-    // Contact form handler
     const form = document.getElementById('contactForm');
     const success = document.getElementById('formSuccess');
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      // In production, connect to Formspree, EmailJS, or your backend
-      // For now, simulate success
       form.style.display = 'none';
       success.style.display = 'block';
     });
