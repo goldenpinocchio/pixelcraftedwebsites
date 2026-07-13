@@ -272,19 +272,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav-logo .logo-mark {
-  width: 30px;
-  height: 30px;
-  background: var(--accent);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  color: #000;
-  font-weight: 700;
-  letter-spacing: 0;
-  transition: background var(--transition);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
   flex-shrink: 0;
+  display: block;
 }
 
 .nav-links {
