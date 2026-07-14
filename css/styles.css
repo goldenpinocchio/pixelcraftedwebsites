@@ -448,8 +448,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav-logo .logo-mark {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -457,7 +457,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav-logo .logo-wordmark {
-  width: clamp(92px, 14vw, 148px);
+  width: clamp(92px, 11vw, 128px);
+  max-height: 22px;
+  object-fit: contain;
   height: auto;
   display: block;
 }
@@ -650,6 +652,17 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 @media (min-width: 769px) {
   .nav { padding: 0 clamp(1.5rem, 5vw, 3rem); }
 
+  .nav-inner {
+    gap: 1rem;
+  }
+
+  .nav-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    line-height: 1;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -661,17 +674,26 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   }
 
   .nav-links a {
-    font-size: 0.88rem;
-    padding: 0.4rem 0.75rem;
+    font-size: 0.86rem;
+    padding: 0.38rem 0.7rem;
   }
 
   .nav-hamburger { display: none; }
 
-  .style-switcher { display: flex; }
+  .style-switcher {
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.2rem;
+  }
+
+  .style-btn {
+    width: 26px;
+    height: 26px;
+  }
 
   .nav .btn-primary {
-    padding: 0.6rem 1.25rem;
-    font-size: 0.88rem;
+    padding: 0.58rem 1.1rem;
+    font-size: 0.86rem;
   }
 }
 
