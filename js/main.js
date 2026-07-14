@@ -8,14 +8,16 @@
   const VALID_STYLES = ['default', 'bakery', 'law', 'spa', 'dusk', 'ember', 'moss', 'paper'];
 
   function getStoredStyle() {
-    return localStorage.getItem(STORAGE_KEY) || 'default';
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved && VALID_STYLES.includes(saved)) return saved;
+    return localStorage.getItem('pcw-theme') === 'dark' ? 'spa' : 'default';
   }
 
   function applyStyle(style) {
     if (!VALID_STYLES.includes(style)) style = 'default';
     document.documentElement.setAttribute('data-style', style);
     localStorage.setItem(STORAGE_KEY, style);
-    document.querySelectorAll('.style-btn').forEach(btn => {
+    document.querySelectorAll('.style-btn, .style-label').forEach(btn => {
       const isActive = btn.getAttribute('data-style') === style;
       btn.classList.toggle('active', isActive);
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
@@ -25,6 +27,10 @@
   applyStyle(getStoredStyle());
 
   document.querySelectorAll('.style-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyStyle(btn.getAttribute('data-style')));
+  });
+
+  document.querySelectorAll('.style-label').forEach(btn => {
     btn.addEventListener('click', () => applyStyle(btn.getAttribute('data-style')));
   });
 })();
