@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-style="default">
+<html lang="en" data-theme="light" data-style="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,9 @@
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo-mark.jpg" alt="Pixel Crafted" class="logo-mark">
-        Pixel Crafted
+      <a href="index.html" class="nav-logo" aria-label="Pixel Crafted Websites">
+        <img src="images/logo-animated.gif" alt="Pixel Crafted mark" class="logo-mark">
+        <img src="images/logo-horizontal.png" alt="Pixel Crafted Websites" class="logo-wordmark">
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
@@ -26,10 +26,14 @@
       </ul>
       <div class="nav-actions">
         <div class="style-switcher">
-          <button class="style-btn active" data-style="default" data-tooltip="Default" aria-label="Default style"></button>
-          <button class="style-btn" data-style="bakery" data-tooltip="Bakery" aria-label="Bakery style"></button>
-          <button class="style-btn" data-style="law" data-tooltip="Law" aria-label="Law style"></button>
-          <button class="style-btn" data-style="spa" data-tooltip="Spa" aria-label="Spa style"></button>
+          <button class="style-btn active" data-style="default" data-tooltip="Default / Clean" title="Default / Clean" aria-label="Default style" aria-pressed="true"></button>
+          <button class="style-btn" data-style="bakery" data-tooltip="Bakery / Warm" title="Bakery / Warm" aria-label="Bakery style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="law" data-tooltip="Law / Trust" title="Law / Trust" aria-label="Law style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="spa" data-tooltip="Spa / Calm" title="Spa / Calm" aria-label="Spa style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="dusk" data-tooltip="Dusk / Neon" title="Dusk / Neon" aria-label="Dusk style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="ember" data-tooltip="Ember / Sunset" title="Ember / Sunset" aria-label="Ember style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="moss" data-tooltip="Moss / Earth" title="Moss / Earth" aria-label="Moss style" aria-pressed="false"></button>
+          <button class="style-btn" data-style="paper" data-tooltip="Paper / Editorial" title="Paper / Editorial" aria-label="Paper style" aria-pressed="false"></button>
         </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
           <svg class="sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -120,7 +124,7 @@
         <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">Whether you're on the Short North, in German Village, Clintonville, or wherever Columbus takes you — your website should work as hard as you do.</p>
       </div>
       <div class="img-wrap">
-        <img src="https://images.unsplash.com/photo-1569017388730-020b5f80a004?w=800&q=80" alt="Columbus architecture">
+        <img src="images/about-columbus.jpg" alt="Columbus architecture">
       </div>
     </div>
   </section>

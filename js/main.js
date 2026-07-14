@@ -5,7 +5,7 @@
 // --- Style Switcher ---
 (function () {
   const STORAGE_KEY = 'pcw-style';
-  const VALID_STYLES = ['default', 'bakery', 'law', 'spa'];
+  const VALID_STYLES = ['default', 'bakery', 'law', 'spa', 'dusk', 'ember', 'moss', 'paper'];
 
   function getStoredStyle() {
     return localStorage.getItem(STORAGE_KEY) || 'default';
@@ -16,7 +16,9 @@
     document.documentElement.setAttribute('data-style', style);
     localStorage.setItem(STORAGE_KEY, style);
     document.querySelectorAll('.style-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.getAttribute('data-style') === style);
+      const isActive = btn.getAttribute('data-style') === style;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     });
   }
 
@@ -32,7 +34,7 @@
   const html = document.documentElement;
   const btn = document.getElementById('themeToggle');
 
-  const saved = localStorage.getItem('pcw-theme') || 'dark';
+  const saved = localStorage.getItem('pcw-theme') || 'light';
   html.setAttribute('data-theme', saved);
 
   function updateIcon() {
