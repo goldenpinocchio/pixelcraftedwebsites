@@ -447,18 +447,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex-shrink: 0;
 }
 
-.nav-logo .logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: block;
-}
-
 .nav-logo .logo-wordmark {
-  width: clamp(92px, 11vw, 128px);
-  max-height: 22px;
+  width: clamp(140px, 16vw, 220px);
+  max-height: 52px;
   object-fit: contain;
   height: auto;
   display: block;
