@@ -698,7 +698,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* Desktop nav */
 @media (min-width: 769px) {
   :root {
-    --nav-height: 116px;
+    --nav-height: 132px;
   }
 
   .nav {
@@ -709,6 +709,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav-inner {
     gap: 0.85rem;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .nav-links {
@@ -729,15 +730,23 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav-hamburger { display: none; }
 
   .nav-actions {
+    width: 100%;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
+    gap: 0.55rem;
+    margin-top: 0.1rem;
   }
 
   .style-switcher {
     display: flex;
-    flex: 1 1 100%;
+    flex: 1 1 auto;
     margin-top: 0.2rem;
+    min-width: 0;
+  }
+
+  .style-switcher-labels {
+    max-width: 100%;
   }
 
   .style-btn { width: 30px; height: 30px; }
