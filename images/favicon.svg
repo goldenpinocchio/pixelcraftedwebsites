@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pixel Crafted Websites">
+  <defs>
+    <linearGradient id="pGradient" x1="18" y1="10" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff5aa8"/>
+      <stop offset="52%" stop-color="#b84cff"/>
+      <stop offset="100%" stop-color="#1ea7ff"/>
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bgGradient)"/>
+  <rect x="16" y="14" width="10" height="36" rx="2" fill="url(#pGradient)"/>
+  <rect x="26" y="14" width="12" height="10" rx="1.5" fill="url(#pGradient)"/>
+  <rect x="26" y="24" width="16" height="10" rx="1.5" fill="url(#pGradient)"/>
+  <rect x="26" y="34" width="12" height="10" rx="1.5" fill="url(#pGradient)"/>
+  <rect x="38" y="24" width="6" height="10" rx="1.5" fill="url(#pGradient)"/>
+  <rect x="10" y="28" width="4" height="4" rx="1" fill="#ff5aa8"/>
+  <rect x="46" y="18" width="4" height="4" rx="1" fill="#8f5bff"/>
+  <rect x="46" y="40" width="4" height="4" rx="1" fill="#1ea7ff"/>
+  <rect x="12" y="42" width="4" height="4" rx="1" fill="#1ea7ff"/>
+</svg>

@@ -96,3 +96,42 @@
     observer.observe(el);
   });
 })();
+
+// --- Portfolio Demo Tabs ---
+(function () {
+  document.querySelectorAll('[data-demo-shell]').forEach(shell => {
+    const tabs = Array.from(shell.querySelectorAll('[data-demo-tab]'));
+    const panels = Array.from(shell.querySelectorAll('[data-demo-panel]'));
+
+    if (!tabs.length || !panels.length) return;
+
+    const setActive = (tabName) => {
+      tabs.forEach(tab => {
+        const isActive = tab.getAttribute('data-demo-tab') === tabName;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      panels.forEach(panel => {
+        panel.classList.toggle('active', panel.getAttribute('data-demo-panel') === tabName);
+      });
+    };
+
+    const initial = tabs.find(tab => tab.classList.contains('active')) || tabs[0];
+    setActive(initial.getAttribute('data-demo-tab'));
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => setActive(tab.getAttribute('data-demo-tab')));
+    });
+  });
+
+  document.querySelectorAll('[data-demo-tab-target]').forEach(button => {
+    button.addEventListener('click', () => {
+      const shell = button.closest('[data-demo-shell]');
+      const target = button.getAttribute('data-demo-tab-target');
+      if (!shell || !target) return;
+      const tab = shell.querySelector(`[data-demo-tab="${target}"]`);
+      if (tab) tab.click();
+    });
+  });
+})();

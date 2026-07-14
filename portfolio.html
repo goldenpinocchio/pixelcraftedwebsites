@@ -6,7 +6,7 @@
   <title>Portfolio — Pixel Crafted Websites</title>
   <meta name="description" content="See live theme demos across different industries — bakeries, law firms, streetwear brands, and wellness spas. Find your vibe.">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23c9ff47'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-weight='bold' fill='black'>P</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
 
@@ -62,220 +62,582 @@
   <!-- DEMOS -->
   <section class="section" style="padding-top: 0;">
     <div class="section-inner">
-
-      <!-- DEMO 1: THE BAKERY -->
-      <div class="demo-banner" style="background: #d4a373; color: #1a1a1a;">🍞 LIVE DEMO — The Corner Bakery</div>
-      <div class="demo-wrapper">
-        <div class="demo-header" style="background: #fdf6ec;">
-          <div class="demo-header-left">
-            <span class="demo-title" style="color: #3d2b1f;">The Corner Bakery</span>
-            <span class="demo-tag" style="background: rgba(61,43,31,0.1); color: #8b7355;">Artisanal · Warm · Editorial</span>
+      <div class="demo-shell demo-shell--bakery" data-demo-shell="bakery">
+        <div class="demo-banner">🍞 LIVE DEMO — The Corner Bakery</div>
+        <div class="demo-window">
+          <div class="demo-window-header">
+            <div class="demo-window-meta">
+              <div class="demo-window-title">The Corner Bakery</div>
+              <div class="demo-window-subtitle">A warm little bakery site with menu, ordering, and contact flow inside one window.</div>
+            </div>
+            <div class="demo-tabs" role="tablist" aria-label="The Corner Bakery sections">
+              <button class="demo-tab active" type="button" data-demo-tab="overview" aria-pressed="true">Overview</button>
+              <button class="demo-tab" type="button" data-demo-tab="menu" aria-pressed="false">Menu</button>
+              <button class="demo-tab" type="button" data-demo-tab="order" aria-pressed="false">Order Online</button>
+              <button class="demo-tab" type="button" data-demo-tab="contact" aria-pressed="false">Contact</button>
+            </div>
           </div>
-          <span class="demo-hint">← scroll to explore →</span>
-        </div>
-        <div class="demo-content" style="background: #fdf6ec; color: #3d2b1f;">
-          <div style="max-width: 1100px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 0; align-items: center;">
-              <div>
-                <span style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #a0785a; display: block; margin-bottom: 0.75rem;">Serving Columbus since 2018</span>
-                <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; line-height: 1.1; margin-bottom: 1rem; color: #3d2b1f;">Baked with love,<br><em style="color: #a0785a;">served with pride.</em></h2>
-                <p style="color: #6b4c35; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">Every croissant flakes perfectly. Every loaf tells a story. Come taste what happens when craft meets passion — right here in Columbus.</p>
-                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                  <a href="#" style="background: #3d2b1f; color: #fdf6ec; padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem;">View Our Menu</a>
-                  <a href="#" style="border: 1.5px solid #3d2b1f; color: #3d2b1f; padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem;">Order Online</a>
+          <div class="demo-panel active" data-demo-panel="overview">
+            <div class="demo-hero">
+              <div class="demo-hero-copy">
+                <span class="tag">Artisanal · Warm · Editorial</span>
+                <h3>Baked early. Served fast. Built like a real neighborhood bakery.</h3>
+                <p>Fresh loaves, butter-forward pastries, and a streamlined pickup experience. The whole experience stays inside the mini site so people can explore the brand without leaving the portfolio page.</p>
+                <div class="demo-hero-actions">
+                  <button class="btn btn-primary" type="button" data-demo-tab-target="order">Start an order</button>
+                  <button class="btn btn-outline" type="button" data-demo-tab-target="menu">Browse the menu</button>
+                </div>
+                <div class="demo-stat-row" style="margin-top:1.25rem;">
+                  <div class="demo-stat"><strong>6:00 AM</strong><span>Fresh bake time</span></div>
+                  <div class="demo-stat"><strong>24 hrs</strong><span>Pre-order window</span></div>
+                  <div class="demo-stat"><strong>4.9/5</strong><span>Local review score</span></div>
+                </div>
+              </div>
+              <div class="demo-media">
+                <img src="images/bakery-hero.jpg" alt="Warm bakery counter with pastries">
+              </div>
+            </div>
+            <div class="demo-metrics" style="margin-top:1rem;">
+              <div class="demo-metric"><strong>Croissants</strong><span>Layered, buttery, sold in single or six-pack orders.</span></div>
+              <div class="demo-metric"><strong>Breads</strong><span>Daily sourdough, country loaf, seeded miche, and specials.</span></div>
+              <div class="demo-metric"><strong>Catering</strong><span>Breakfast trays, office boxes, and weekend celebratory bundles.</span></div>
+              <div class="demo-metric"><strong>Pickup</strong><span>Counter pickup or curbside with live order confirmation.</span></div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="menu">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Morning Pastries</h4>
+                <div class="demo-list" style="margin-top:0.8rem;">
+                  <div class="demo-list-item"><div><strong>Butter Croissant</strong><span>Classic laminated dough, baked every morning.</span></div><div class="demo-price">$3.50</div></div>
+                  <div class="demo-list-item"><div><strong>Honey Cinnamon Roll</strong><span>Soft brioche, brown sugar swirl, honey glaze.</span></div><div class="demo-price">$4.25</div></div>
+                  <div class="demo-list-item"><div><strong>Seasonal Fruit Danish</strong><span>Stone fruit when available, citrus glaze.</span></div><div class="demo-price">$4.75</div></div>
+                </div>
+              </div>
+              <div class="demo-card">
+                <h4>Hearty Breads</h4>
+                <div class="demo-list" style="margin-top:0.8rem;">
+                  <div class="demo-list-item"><div><strong>Rustic Sourdough</strong><span>48-hour fermentation, crisp crust, open crumb.</span></div><div class="demo-price">$7.00</div></div>
+                  <div class="demo-list-item"><div><strong>Seeded Country Loaf</strong><span>Sunflower, sesame, flax, and oats.</span></div><div class="demo-price">$8.50</div></div>
+                  <div class="demo-list-item"><div><strong>Weekend Focaccia</strong><span>Olive oil, rosemary, flaky sea salt.</span></div><div class="demo-price">$6.50</div></div>
                 </div>
               </div>
             </div>
-            <div style="background: #f5ead8; padding: 2.5rem 0; margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem;">
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 1.5rem; color: #3d2b1f;">Today's Fresh Picks</h3>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(61,43,31,0.08);">
-                  <img src="images/croissants.jpg" alt="Croissants" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
-                  <div style="padding: 1rem;">
-                    <h4 style="font-family: 'Playfair Display', serif; font-size: 0.95rem; margin-bottom: 0.3rem;">Butter Croissants</h4>
-                    <p style="color: #8b7355; font-size: 0.8rem;">Flaky, golden, made fresh every morning.</p>
-                    <span style="display: block; margin-top: 0.5rem; font-weight: 700; color: #a0785a;">$3.50</span>
-                  </div>
+            <div class="demo-card-grid" style="margin-top:1rem;">
+              <div class="demo-card">
+                <h4>Bundles &amp; Boxes</h4>
+                <ul>
+                  <li>Breakfast Box for 6 - pastries, fruit, and drip coffee service.</li>
+                  <li>Celebration Dozen - mixed sweets with custom note card.</li>
+                  <li>Lunch Combo - loaf, soup, and sandwich add-ons for quick pickup.</li>
+                </ul>
+              </div>
+              <div class="demo-card">
+                <h4>Drink Pairings</h4>
+                <ul>
+                  <li>House drip, oat latte, and cold brew on tap.</li>
+                  <li>Seasonal chai, vanilla matcha, and sparkling citrus spritz.</li>
+                  <li>Tray add-ons for catering and boardroom breakfast orders.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="demo-shop-grid" style="margin-top:1rem;">
+              <article class="demo-product">
+                <img src="images/croissants.jpg" alt="Fresh croissants on the bakery counter">
+                <div class="demo-product-body">
+                  <h4>Butter Croissants</h4>
+                  <p>Single or six-pack order with an early morning pickup tag.</p>
+                  <div class="demo-price">$3.50</div>
                 </div>
-                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(61,43,31,0.08);">
-                  <img src="images/sourdough.jpg" alt="Sourdough" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
-                  <div style="padding: 1rem;">
-                    <h4 style="font-family: 'Playfair Display', serif; font-size: 0.95rem; margin-bottom: 0.3rem;">Rustic Sourdough</h4>
-                    <p style="color: #8b7355; font-size: 0.8rem;">Naturally leavened, 48-hour fermented.</p>
-                    <span style="display: block; margin-top: 0.5rem; font-weight: 700; color: #a0785a;">$7.00</span>
-                  </div>
+              </article>
+              <article class="demo-product">
+                <img src="images/sourdough.jpg" alt="Rustic sourdough loaf">
+                <div class="demo-product-body">
+                  <h4>Rustic Sourdough</h4>
+                  <p>Crackly crust, airy crumb, and a full-day bake schedule.</p>
+                  <div class="demo-price">$7.00</div>
                 </div>
-                <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(61,43,31,0.08);">
-                  <img src="images/cinnamon-roll.jpg" alt="Cinnamon roll" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
-                  <div style="padding: 1rem;">
-                    <h4 style="font-family: 'Playfair Display', serif; font-size: 0.95rem; margin-bottom: 0.3rem;">Honey Cinnamon Rolls</h4>
-                    <p style="color: #8b7355; font-size: 0.8rem;">Warm, gooey, drizzled with local honey.</p>
-                    <span style="display: block; margin-top: 0.5rem; font-weight: 700; color: #a0785a;">$4.25</span>
-                  </div>
+              </article>
+              <article class="demo-product">
+                <img src="images/cinnamon-roll-optimized.jpg" alt="Honey cinnamon rolls">
+                <div class="demo-product-body">
+                  <h4>Honey Cinnamon Rolls</h4>
+                  <p>Soft brioche, sticky glaze, and a weekend best seller.</p>
+                  <div class="demo-price">$4.25</div>
                 </div>
+              </article>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="order">
+            <div class="demo-form-panel demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Fake Order Online</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group">
+                      <label class="form-label" for="bakery-name">Name</label>
+                      <input class="form-input" id="bakery-name" type="text" value="Jordan Lee">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="bakery-phone">Phone</label>
+                      <input class="form-input" id="bakery-phone" type="tel" value="(614) 555-0188">
+                    </div>
+                  </div>
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group">
+                      <label class="form-label" for="bakery-pickup">Pickup Date</label>
+                      <input class="form-input" id="bakery-pickup" type="date">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="bakery-time">Pickup Time</label>
+                      <select class="form-select" id="bakery-time">
+                        <option>8:00 AM</option>
+                        <option>9:00 AM</option>
+                        <option>10:30 AM</option>
+                        <option>12:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="bakery-order">What are you ordering?</label>
+                    <textarea class="form-textarea" id="bakery-order">2 croissants, 1 sourdough, 1 cinnamon roll, and an oat latte.</textarea>
+                  </div>
+                  <div class="demo-chip-row">
+                    <span class="demo-chip">Pickup</span>
+                    <span class="demo-chip">Curbside</span>
+                    <span class="demo-chip">Pre-order</span>
+                    <span class="demo-chip">Catering</span>
+                  </div>
+                  <button class="btn btn-primary" type="button">Place Order</button>
+                </form>
+              </div>
+              <div class="demo-summary">
+                <h4>Order Summary</h4>
+                <p class="demo-inline-note">This is a demo checkout pane, but it behaves like a real mini cart.</p>
+                <ul class="demo-summary-list">
+                  <li><span>Butter Croissant x 2</span><strong>$7.00</strong></li>
+                  <li><span>Rustic Sourdough x 1</span><strong>$7.00</strong></li>
+                  <li><span>Cinnamon Roll x 1</span><strong>$4.25</strong></li>
+                  <li><span>Pickup fee</span><strong>$0.00</strong></li>
+                </ul>
+                <div class="divider" style="margin:0.95rem 0;"></div>
+                <ul class="demo-summary-list">
+                  <li><span>Estimated total</span><strong>$18.25</strong></li>
+                  <li><span>Prep time</span><strong>45 min</strong></li>
+                  <li><span>Status</span><strong>Ready for pickup</strong></li>
+                </ul>
+                <div class="demo-card" style="margin-top:1rem;">
+                  <h4>Pickup Notes</h4>
+                  <p>Orders are packed in a bakery box with the customer name printed on the receipt tag and a note card if requested.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="contact">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Visit The Shop</h4>
+                <p>1248 Neil Avenue, Columbus, OH</p>
+                <ul style="margin-top:0.8rem; list-style:none; display:grid; gap:0.55rem;">
+                  <li><strong>Mon-Fri:</strong> 7:00 AM - 4:00 PM</li>
+                  <li><strong>Saturday:</strong> 8:00 AM - 3:00 PM</li>
+                  <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+                <div class="demo-faux-map" style="margin-top:1rem;"></div>
+              </div>
+              <div class="demo-card">
+                <h4>Contact Form</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="form-group">
+                    <label class="form-label" for="bakery-email">Email</label>
+                    <input class="form-input" id="bakery-email" type="email" value="hello@thecornerbakery.com">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="bakery-message">Message</label>
+                    <textarea class="form-textarea" id="bakery-message">Need a dozen croissant boxes for a Friday office breakfast.</textarea>
+                  </div>
+                  <div class="demo-chip-row">
+                    <span class="demo-chip">Custom orders</span>
+                    <span class="demo-chip">Dietary notes</span>
+                    <span class="demo-chip">Large events</span>
+                  </div>
+                  <button class="btn btn-primary" type="button">Send Inquiry</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- DEMO 2: ELEVATION LAW -->
-      <div class="demo-banner" style="background: #1a2744; color: #d4af37;">⚖ LIVE DEMO — Elevation Law</div>
-      <div class="demo-wrapper">
-        <div class="demo-header" style="background: #0e1a2e;">
-          <div class="demo-header-left">
-            <span class="demo-title" style="color: #d4af37;">Elevation Law</span>
-            <span class="demo-tag" style="background: rgba(255,255,255,0.06); color: #8a9cc2;">Corporate · Trustworthy · Dark</span>
+      <div class="demo-shell demo-shell--law" data-demo-shell="law">
+        <div class="demo-banner">⚖ LIVE DEMO — Elevation Law</div>
+        <div class="demo-window">
+          <div class="demo-window-header">
+            <div class="demo-window-meta">
+              <div class="demo-window-title">Elevation Law</div>
+              <div class="demo-window-subtitle">A confident legal site with contact flow, practice areas, and proof of results.</div>
+            </div>
+            <div class="demo-tabs" role="tablist" aria-label="Elevation Law sections">
+              <button class="demo-tab active" type="button" data-demo-tab="overview" aria-pressed="true">Overview</button>
+              <button class="demo-tab" type="button" data-demo-tab="practice" aria-pressed="false">Practice Areas</button>
+              <button class="demo-tab" type="button" data-demo-tab="results" aria-pressed="false">Results</button>
+              <button class="demo-tab" type="button" data-demo-tab="contact" aria-pressed="false">Contact</button>
+            </div>
           </div>
-          <span class="demo-hint">← scroll to explore →</span>
-        </div>
-        <div class="demo-content" style="background: #0e1a2e; color: #e8eef5;">
-          <div style="max-width: 1100px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 0; align-items: center;">
-              <div>
-                <span style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #d4af37; display: block; margin-bottom: 0.75rem;">Columbus, Ohio · Established 2009</span>
-                <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; line-height: 1.1; margin-bottom: 1rem; color: #fff;">Justice doesn't<br><em style="color: #d4af37;">have to wait.</em></h2>
-                <p style="color: #8a9cc2; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">At Elevation Law, we fight for the compensation you deserve. Personal injury, wrongful death, insurance bad faith — we've recovered millions for Ohio families.</p>
-                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                  <a href="#" style="background: #d4af37; color: #0e1a2e; padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem;">Free Consultation</a>
-                  <a href="#" style="border: 1.5px solid rgba(255,255,255,0.2); color: #e8eef5; padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem;">Our Results</a>
+          <div class="demo-panel active" data-demo-panel="overview">
+            <div class="demo-hero">
+              <div class="demo-hero-copy">
+                <span class="tag">Corporate · Trustworthy · Dark</span>
+                <h3>Quiet confidence, serious copy, and a clear path to a consultation.</h3>
+                <p>Built to feel credible from the first scroll. The contact flow, practice areas, and trust signals are all visible without leaving the embedded demo.</p>
+                <div class="demo-hero-actions">
+                  <button class="btn btn-primary" type="button" data-demo-tab-target="contact">Free consultation</button>
+                  <button class="btn btn-outline" type="button" data-demo-tab-target="results">See results</button>
                 </div>
-                <div style="margin-top: 1.5rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                  <div><span style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d4af37;">$47M+</span><br><span style="font-size: 0.72rem; color: #5a6e8c;">Recovered</span></div>
-                  <div><span style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d4af37;">500+</span><br><span style="font-size: 0.72rem; color: #5a6e8c;">Cases Won</span></div>
-                  <div><span style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d4af37;">17</span><br><span style="font-size: 0.72rem; color: #5a6e8c;">Years Experience</span></div>
+                <div class="demo-stat-row" style="margin-top:1.25rem;">
+                  <div class="demo-stat"><strong>$47M+</strong><span>Recovered for clients</span></div>
+                  <div class="demo-stat"><strong>500+</strong><span>Cases handled</span></div>
+                  <div class="demo-stat"><strong>17 yrs</strong><span>Trial experience</span></div>
+                </div>
+              </div>
+              <div class="demo-media">
+                <img src="images/law-hero.jpg" alt="Modern legal office with a professional tone">
+              </div>
+            </div>
+            <div class="demo-card-grid" style="margin-top:1rem;">
+              <div class="demo-card">
+                <h4>What Clients See First</h4>
+                <ul>
+                  <li>24/7 consultation request form for urgent cases.</li>
+                  <li>Practice area cards that explain the kind of claim they handle.</li>
+                  <li>Clear proof points to build trust fast.</li>
+                </ul>
+              </div>
+              <div class="demo-card">
+                <h4>Office Snapshot</h4>
+                <ul>
+                  <li>Columbus-based injury and insurance practice.</li>
+                  <li>Evening calls and weekend intake available.</li>
+                  <li>Case review response within one business day.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="practice">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Core Practice Areas</h4>
+                <div class="demo-card-grid" style="margin-top:0.8rem;">
+                  <div class="demo-card"><h4>Personal Injury</h4><p>Car crashes, slip and falls, and workplace injuries.</p></div>
+                  <div class="demo-card"><h4>Medical Malpractice</h4><p>Surgical mistakes, misdiagnosis, and delayed treatment.</p></div>
+                  <div class="demo-card"><h4>Insurance Disputes</h4><p>Denied claims, underpayment, and bad faith cases.</p></div>
+                  <div class="demo-card"><h4>Wrongful Death</h4><p>Sensitive case work with family-first communication.</p></div>
+                </div>
+              </div>
+              <div class="demo-card">
+                <h4>How They Position It</h4>
+                <ul>
+                  <li>Legal copy that is direct instead of flashy.</li>
+                  <li>Firm-branded sections with measurable proof.</li>
+                  <li>Intake routing for urgent and non-urgent matters.</li>
+                </ul>
+                <div class="demo-media" style="margin-top:1rem;">
+                  <img src="images/about-columbus.jpg" alt="Columbus skyline used as a city context image">
                 </div>
               </div>
             </div>
-            <div style="background: #162035; padding: 2.5rem 0; margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem;">
-              <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.4rem; font-weight: 700; text-align: center; margin-bottom: 1.5rem; color: #fff;">Practice Areas</h3>
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem; text-align: center;">
-                  <div style="font-size: 1.25rem; margin-bottom: 0.5rem;">⚖</div>
-                  <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Personal Injury</h4>
-                  <p style="color: #5a6e8c; font-size: 0.75rem;">Auto, slip & fall, workplace accidents</p>
+          </div>
+          <div class="demo-panel" data-demo-panel="results">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Recent Recoveries</h4>
+                <div class="demo-list" style="margin-top:0.8rem;">
+                  <div class="demo-list-item"><div><strong>Auto collision settlement</strong><span>Medical bills, lost wages, and property damage.</span></div><div class="demo-price">$850K</div></div>
+                  <div class="demo-list-item"><div><strong>Premises liability claim</strong><span>Unsafe stairway fall with long-term therapy costs.</span></div><div class="demo-price">$320K</div></div>
+                  <div class="demo-list-item"><div><strong>Bad faith insurance dispute</strong><span>Claim denial reversed after pre-litigation pressure.</span></div><div class="demo-price">$410K</div></div>
                 </div>
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem; text-align: center;">
-                  <div style="font-size: 1.25rem; margin-bottom: 0.5rem;">🏥</div>
-                  <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Medical Malpractice</h4>
-                  <p style="color: #5a6e8c; font-size: 0.75rem;">Surgical errors, misdiagnosis, negligence</p>
-                </div>
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem; text-align: center;">
-                  <div style="font-size: 1.25rem; margin-bottom: 0.5rem;">🛡</div>
-                  <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Insurance Disputes</h4>
-                  <p style="color: #5a6e8c; font-size: 0.75rem;">Bad faith claims, denials, underpayment</p>
-                </div>
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.25rem; text-align: center;">
-                  <div style="font-size: 1.25rem; margin-bottom: 0.5rem;">⚰</div>
-                  <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">Wrongful Death</h4>
-                  <p style="color: #5a6e8c; font-size: 0.75rem;">Fighting for families when others won't</p>
-                </div>
+              </div>
+              <div class="demo-card">
+                <h4>Client Testimonial</h4>
+                <p style="font-family:var(--font-display); font-style:italic; font-size:1.05rem; margin:0.8rem 0 1rem;">"They explained every step, answered every call, and handled the whole thing without the noise."</p>
+                <p class="demo-inline-note">The results panel gives the site some proof-backed momentum without turning it into a billboard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="contact">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Contact / Intake</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group"><label class="form-label" for="law-name">Full Name</label><input class="form-input" id="law-name" type="text" value="Alex Morgan"></div>
+                    <div class="form-group"><label class="form-label" for="law-phone">Phone</label><input class="form-input" id="law-phone" type="tel" value="(614) 555-0124"></div>
+                  </div>
+                  <div class="form-group"><label class="form-label" for="law-issue">Case Type</label><select class="form-select" id="law-issue"><option>Car accident</option><option>Medical malpractice</option><option>Insurance dispute</option><option>Wrongful death</option></select></div>
+                  <div class="form-group"><label class="form-label" for="law-note">Tell us what happened</label><textarea class="form-textarea" id="law-note">Need help after a rear-end collision with injuries.</textarea></div>
+                  <button class="btn btn-primary" type="button">Request Consultation</button>
+                </form>
+              </div>
+              <div class="demo-card">
+                <h4>Office Details</h4>
+                <ul style="margin-top:0.8rem; list-style:none; display:grid; gap:0.55rem;">
+                  <li><strong>Address:</strong> 850 Broad Street, Columbus, OH</li>
+                  <li><strong>Hours:</strong> Mon-Fri, 8:30 AM - 6:00 PM</li>
+                  <li><strong>Emergency calls:</strong> 24/7 voicemail and callback queue</li>
+                </ul>
+                <div class="demo-faux-map" style="margin-top:1rem;"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- DEMO 3: SOLE CULTURE -->
-      <div class="demo-banner" style="background: #000; color: #fff;">👟 LIVE DEMO — Sole Culture</div>
-      <div class="demo-wrapper">
-        <div class="demo-header" style="background: #0a0a0a;">
-          <div class="demo-header-left">
-            <span class="demo-title" style="color: #fff;">SOLE CULTURE</span>
-            <span class="demo-tag" style="background: rgba(255,255,255,0.06); color: #666;">Bold · Streetwear · High Contrast</span>
+      <div class="demo-shell demo-shell--sole" data-demo-shell="sole">
+        <div class="demo-banner">👟 LIVE DEMO — Sole Culture</div>
+        <div class="demo-window">
+          <div class="demo-window-header">
+            <div class="demo-window-meta">
+              <div class="demo-window-title">Sole Culture</div>
+              <div class="demo-window-subtitle">A fake shop experience with product grid, releases, and contact support built into one frame.</div>
+            </div>
+            <div class="demo-tabs" role="tablist" aria-label="Sole Culture sections">
+              <button class="demo-tab active" type="button" data-demo-tab="overview" aria-pressed="true">Overview</button>
+              <button class="demo-tab" type="button" data-demo-tab="shop" aria-pressed="false">Shop</button>
+              <button class="demo-tab" type="button" data-demo-tab="drops" aria-pressed="false">Drops</button>
+              <button class="demo-tab" type="button" data-demo-tab="contact" aria-pressed="false">Contact</button>
+            </div>
           </div>
-          <span class="demo-hint">← scroll to explore →</span>
-        </div>
-        <div class="demo-content" style="background: #0a0a0a; color: #fff;">
-          <div style="max-width: 1100px; margin: 0 auto;">
-            <div style="text-align: center; padding: 2.5rem 0;">
-              <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 8vw, 5.5rem); font-weight: 700; letter-spacing: -0.04em; line-height: 0.95; margin-bottom: 0.75rem;">WE DON'T<br>FOLLOW TRENDS.</h2>
-              <p style="color: #555; font-size: 0.8rem; margin-bottom: 1.75rem; font-family: var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase;">We set them. Columbus-born. Shipped nationwide.</p>
-              <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#" style="background: #fff; color: #000; padding: 0.75rem 1.75rem; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em;">Shop New Arrivals</a>
-                <a href="#" style="border: 1px solid #333; color: #fff; padding: 0.75rem 1.75rem; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em;">Our Story</a>
+          <div class="demo-panel active" data-demo-panel="overview">
+            <div class="demo-hero">
+              <div class="demo-hero-copy">
+                <span class="tag">Bold · Streetwear · High Contrast</span>
+                <h3>Less brochure. More storefront.</h3>
+                <p>This demo leans into a full retail vibe: new arrivals, drop culture, and a mini checkout-style layout that still sits inside the portfolio page.</p>
+                <div class="demo-hero-actions">
+                  <button class="btn btn-primary" type="button" data-demo-tab-target="shop">Shop new arrivals</button>
+                  <button class="btn btn-outline" type="button" data-demo-tab-target="drops">See latest drops</button>
+                </div>
+                <div class="demo-stat-row" style="margin-top:1.25rem;">
+                  <div class="demo-stat"><strong>72 hr</strong><span>Drop sellout pace</span></div>
+                  <div class="demo-stat"><strong>1,200+</strong><span>Members on the list</span></div>
+                  <div class="demo-stat"><strong>Nationwide</strong><span>Shipping coverage</span></div>
+                </div>
+              </div>
+              <div class="demo-media">
+                <img src="images/sneakers.jpg" alt="Street sneaker hero image">
               </div>
             </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-              <div style="position: relative; aspect-ratio: 3/4; overflow: hidden;">
-                <img src="images/sneakers.jpg" alt="Sneakers" style="width: 100%; height: 100%; object-fit: cover;">
-                <div style="position: absolute; bottom: 1rem; left: 1rem;">
-                  <span style="font-family: var(--font-mono); font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em;">Just Dropped</span>
-                  <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; margin-top: 0.2rem;">Velocity X1 — $185</h3>
+          </div>
+          <div class="demo-panel" data-demo-panel="shop">
+            <div class="demo-chip-row">
+              <span class="demo-chip">New</span>
+              <span class="demo-chip">Footwear</span>
+              <span class="demo-chip">Tops</span>
+              <span class="demo-chip">Outerwear</span>
+              <span class="demo-chip">Accessories</span>
+            </div>
+            <div class="demo-shop-grid" style="margin-top:1rem;">
+              <article class="demo-product">
+                <img src="images/sneakers.jpg" alt="Feature sneaker product">
+                <div class="demo-product-body">
+                  <h4>Velocity X1</h4>
+                  <p>Tech mesh runner with reflective accents and a limited release tag.</p>
+                  <div class="demo-price">$185</div>
+                </div>
+              </article>
+              <article class="demo-product">
+                <img src="images/streetwear.jpg" alt="Streetwear tees and hoodie product">
+                <div class="demo-product-body">
+                  <h4>Heavyweight Hoodie</h4>
+                  <p>Boxy cut, thick fleece, and a small chest hit for everyday wear.</p>
+                  <div class="demo-price">$92</div>
+                </div>
+              </article>
+              <article class="demo-product">
+                <img src="images/limited-drop.jpg" alt="Limited drop product image">
+                <div class="demo-product-body">
+                  <h4>Collab Tote</h4>
+                  <p>Canvas carryall that ships with each release while supplies last.</p>
+                  <div class="demo-price">$28</div>
+                </div>
+              </article>
+              <article class="demo-product">
+                <img src="images/hero-webdesign.jpg" alt="Studio workspace used as a conceptual product image">
+                <div class="demo-product-body">
+                  <h4>Studio Tee</h4>
+                  <p>Printed run that drops alongside the season lookbook and email launch.</p>
+                  <div class="demo-price">$45</div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="drops">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Drop Calendar</h4>
+                <div class="demo-list" style="margin-top:0.8rem;">
+                  <div class="demo-list-item"><div><strong>Friday Night Release</strong><span>Signature sneaker restock with early access for members.</span></div><div class="demo-price">8 PM</div></div>
+                  <div class="demo-list-item"><div><strong>Collab capsule</strong><span>Limited tees, tote, and sticker pack bundle.</span></div><div class="demo-price">$68</div></div>
+                  <div class="demo-list-item"><div><strong>Monthly archive</strong><span>One archived piece brought back with fresh colorways.</span></div><div class="demo-price">1 item</div></div>
                 </div>
               </div>
-              <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 0;">
-                <div style="position: relative; overflow: hidden;">
-                  <img src="images/streetwear.jpg" alt="Streetwear" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div style="position: absolute; bottom: 1rem; left: 1rem;">
-                    <span style="font-family: var(--font-mono); font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em;">Tees & Hoodies</span>
-                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 700; margin-top: 0.2rem;">Starting at $45</h3>
-                  </div>
+              <div class="demo-card">
+                <h4>Membership Perks</h4>
+                <ul>
+                  <li>24-hour early access to every launch.</li>
+                  <li>Free shipping on drop-week orders over $75.</li>
+                  <li>Member-only product previews and size restock alerts.</li>
+                </ul>
+                <div class="demo-card" style="margin-top:1rem;">
+                  <h4>Lookbook Note</h4>
+                  <p>Pair the black-and-white storefront with strong photography and the product cards start feeling like a real brand experience.</p>
                 </div>
-                <div style="position: relative; overflow: hidden;">
-                  <img src="images/limited-drop.jpg" alt="Limited edition" style="width: 100%; height: 100%; object-fit: cover;">
-                  <div style="position: absolute; bottom: 1rem; left: 1rem;">
-                    <span style="font-family: var(--font-mono); font-size: 0.65rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em;">Collab Series</span>
-                    <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 0.95rem; font-weight: 700; margin-top: 0.2rem;">Limited Drops</h3>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="contact">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Wholesale / Support</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="form-group"><label class="form-label" for="sole-email">Email</label><input class="form-input" id="sole-email" type="email" value="support@soleculture.co"></div>
+                  <div class="form-group"><label class="form-label" for="sole-question">Message</label><textarea class="form-textarea" id="sole-question">Want to stock the collection in our Columbus shop.</textarea></div>
+                  <button class="btn btn-primary" type="button">Send Message</button>
+                </form>
+              </div>
+              <div class="demo-card">
+                <h4>Store Details</h4>
+                <ul style="margin-top:0.8rem; list-style:none; display:grid; gap:0.55rem;">
+                  <li><strong>Flagship:</strong> Short North, Columbus</li>
+                  <li><strong>Hours:</strong> Daily from 11:00 AM to 8:00 PM</li>
+                  <li><strong>Shipping:</strong> Same-day label creation, real-time tracking emails</li>
+                </ul>
+                <div class="demo-faux-map" style="margin-top:1rem;"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- DEMO 4: SERENOVA SPA -->
-      <div class="demo-banner" style="background: #e8ede5; color: #4a5d45;">🌿 LIVE DEMO — Serenova Spa</div>
-      <div class="demo-wrapper">
-        <div class="demo-header" style="background: #f7f9f5;">
-          <div class="demo-header-left">
-            <span class="demo-title" style="color: #3d4d35;">Serenova Spa</span>
-            <span class="demo-tag" style="background: rgba(61,77,53,0.08); color: #7a8b6d;">Wellness · Calm · Botanical</span>
+      <div class="demo-shell demo-shell--spa" data-demo-shell="spa">
+        <div class="demo-banner">🌿 LIVE DEMO — Serenova Spa</div>
+        <div class="demo-window">
+          <div class="demo-window-header">
+            <div class="demo-window-meta">
+              <div class="demo-window-title">Serenova Spa</div>
+              <div class="demo-window-subtitle">A soft wellness experience with booking, rituals, and contact details all in one place.</div>
+            </div>
+            <div class="demo-tabs" role="tablist" aria-label="Serenova Spa sections">
+              <button class="demo-tab active" type="button" data-demo-tab="overview" aria-pressed="true">Overview</button>
+              <button class="demo-tab" type="button" data-demo-tab="book" aria-pressed="false">Book</button>
+              <button class="demo-tab" type="button" data-demo-tab="rituals" aria-pressed="false">Rituals</button>
+              <button class="demo-tab" type="button" data-demo-tab="contact" aria-pressed="false">Contact</button>
+            </div>
           </div>
-          <span class="demo-hint">← scroll to explore →</span>
-        </div>
-        <div class="demo-content" style="background: #f7f9f5; color: #3d4d35;">
-          <div style="max-width: 1100px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2rem 0; align-items: center;">
-              <div>
-                <span style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #7a8b6d; display: block; margin-bottom: 0.75rem;">Your sanctuary in Columbus</span>
-                <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; line-height: 1.1; margin-bottom: 1rem; color: #3d4d35;">Find stillness.<br><em style="color: #7a8b6d;">Restore balance.</em></h2>
-                <p style="color: #6b7a5e; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">At Serenova, every treatment is a ritual. From hot stone massage to botanical facials, we create space for you to come back to yourself.</p>
-                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                  <a href="#" style="background: #3d4d35; color: #f7f9f5; padding: 0.7rem 1.5rem; border-radius: 100px; font-weight: 600; font-size: 0.85rem;">Book a Treatment</a>
-                  <a href="#" style="border: 1.5px solid #3d4d35; color: #3d4d35; padding: 0.7rem 1.5rem; border-radius: 100px; font-weight: 600; font-size: 0.85rem;">Explore Services</a>
+          <div class="demo-panel active" data-demo-panel="overview">
+            <div class="demo-hero">
+              <div class="demo-hero-copy">
+                <span class="tag">Wellness · Calm · Botanical</span>
+                <h3>Soft visuals, strong booking flow, and the feeling of a real retreat.</h3>
+                <p>Serenova leans into peace and simplicity, but the page is still full of useful bits: treatment details, booking steps, and a real contact path.</p>
+                <div class="demo-hero-actions">
+                  <button class="btn btn-primary" type="button" data-demo-tab-target="book">Book a treatment</button>
+                  <button class="btn btn-outline" type="button" data-demo-tab-target="rituals">Explore rituals</button>
+                </div>
+                <div class="demo-stat-row" style="margin-top:1.25rem;">
+                  <div class="demo-stat"><strong>60 min</strong><span>Most popular treatment length</span></div>
+                  <div class="demo-stat"><strong>6 rooms</strong><span>Private treatment suites</span></div>
+                  <div class="demo-stat"><strong>7 days</strong><span>Advance booking window</span></div>
+                </div>
+              </div>
+              <div class="demo-media">
+                <img src="images/spa-hero.jpg" alt="Peaceful spa treatment room">
+              </div>
+            </div>
+            <div class="demo-card-grid" style="margin-top:1rem;">
+              <div class="demo-card"><h4>Hydrotherapy</h4><p>Warm soak, exfoliation, and guided breathing reset.</p></div>
+              <div class="demo-card"><h4>Hot Stone</h4><p>Deep muscle release with a grounding, slower pace.</p></div>
+              <div class="demo-card"><h4>Botanical Facial</h4><p>Cleanser, mask, and finishing ritual with plant-based products.</p></div>
+              <div class="demo-card"><h4>Sound Bath</h4><p>Quiet, immersive reset that rounds out the wellness menu.</p></div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="book">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Book a Treatment</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group"><label class="form-label" for="spa-name">Name</label><input class="form-input" id="spa-name" type="text" value="Mia Carter"></div>
+                    <div class="form-group"><label class="form-label" for="spa-phone">Phone</label><input class="form-input" id="spa-phone" type="tel" value="(614) 555-0192"></div>
+                  </div>
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group"><label class="form-label" for="spa-service">Service</label><select class="form-select" id="spa-service"><option>Hot Stone Massage</option><option>Botanical Facial</option><option>Hydrotherapy Journey</option><option>Sound Bath Healing</option></select></div>
+                    <div class="form-group"><label class="form-label" for="spa-length">Length</label><select class="form-select" id="spa-length"><option>60 minutes</option><option>75 minutes</option><option>90 minutes</option></select></div>
+                  </div>
+                  <div class="demo-form-grid demo-form-grid--2">
+                    <div class="form-group"><label class="form-label" for="spa-date">Preferred Date</label><input class="form-input" id="spa-date" type="date"></div>
+                    <div class="form-group"><label class="form-label" for="spa-time">Preferred Time</label><select class="form-select" id="spa-time"><option>10:00 AM</option><option>12:30 PM</option><option>3:00 PM</option><option>5:30 PM</option></select></div>
+                  </div>
+                  <div class="form-group"><label class="form-label" for="spa-note">Treatment Notes</label><textarea class="form-textarea" id="spa-note">Light pressure, focus on neck and shoulders, and extra time to unwind.</textarea></div>
+                  <button class="btn btn-primary" type="button">Reserve My Spot</button>
+                </form>
+              </div>
+              <div class="demo-summary">
+                <h4>Your Visit</h4>
+                <ul class="demo-summary-list">
+                  <li><span>Selected service</span><strong>Botanical Facial</strong></li>
+                  <li><span>Length</span><strong>75 min</strong></li>
+                  <li><span>Add-on</span><strong>Scalp massage</strong></li>
+                  <li><span>Estimated total</span><strong>$140</strong></li>
+                </ul>
+                <div class="demo-card" style="margin-top:1rem;">
+                  <h4>Booking Tip</h4>
+                  <p>Show the appointment summary before submission and the booking flow feels much closer to a real service business.</p>
                 </div>
               </div>
             </div>
-            <div style="background: #edf2eb; padding: 2.5rem 0; margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem;">
-              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; color: #3d4d35;">Signature Rituals</h3>
-              <p style="text-align: center; color: #7a8b6d; margin-bottom: 1.5rem; font-size: 0.85rem;">Each treatment is thoughtfully curated for deep renewal.</p>
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;">
-                <div style="background: #fff; border-radius: 16px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 12px rgba(61,77,53,0.06);">
-                  <div style="font-size: 2rem; margin-bottom: 0.6rem;">🪨</div>
-                  <h4 style="font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.25rem;">Hot Stone Massage</h4>
-                  <p style="color: #7a8b6d; font-size: 0.75rem; margin-bottom: 0.5rem;">60 or 90 min · From $95</p>
-                  <a href="#" style="font-size: 0.75rem; font-weight: 600; color: #3d4d35; text-decoration: underline; text-underline-offset: 3px;">Book →</a>
+          </div>
+          <div class="demo-panel" data-demo-panel="rituals">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Signature Rituals</h4>
+                <div class="demo-list" style="margin-top:0.8rem;">
+                  <div class="demo-list-item"><div><strong>Hot Stone Massage</strong><span>Deep relaxation for muscle tension and stress relief.</span></div><div class="demo-price">$95</div></div>
+                  <div class="demo-list-item"><div><strong>Botanical Facial</strong><span>Skin reset with a plant-forward product stack.</span></div><div class="demo-price">$120</div></div>
+                  <div class="demo-list-item"><div><strong>Hydrotherapy Journey</strong><span>Water, warmth, and recovery-focused rituals.</span></div><div class="demo-price">$150</div></div>
                 </div>
-                <div style="background: #fff; border-radius: 16px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 12px rgba(61,77,53,0.06);">
-                  <div style="font-size: 2rem; margin-bottom: 0.6rem;">🌸</div>
-                  <h4 style="font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.25rem;">Botanical Facial</h4>
-                  <p style="color: #7a8b6d; font-size: 0.75rem; margin-bottom: 0.5rem;">75 min · From $120</p>
-                  <a href="#" style="font-size: 0.75rem; font-weight: 600; color: #3d4d35; text-decoration: underline; text-underline-offset: 3px;">Book →</a>
+              </div>
+              <div class="demo-card">
+                <h4>Memberships</h4>
+                <ul>
+                  <li>Monthly treatment credit and priority scheduling.</li>
+                  <li>Members-only quiet hour every Wednesday morning.</li>
+                  <li>Birthday add-on and retail product discount included.</li>
+                </ul>
+                <div class="demo-media" style="margin-top:1rem;">
+                  <img src="images/about-columbus.jpg" alt="Soft landscape used as a calm locality image">
                 </div>
-                <div style="background: #fff; border-radius: 16px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 12px rgba(61,77,53,0.06);">
-                  <div style="font-size: 2rem; margin-bottom: 0.6rem;">💧</div>
-                  <h4 style="font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.25rem;">Hydrotherapy Journey</h4>
-                  <p style="color: #7a8b6d; font-size: 0.75rem; margin-bottom: 0.5rem;">90 min · From $150</p>
-                  <a href="#" style="font-size: 0.75rem; font-weight: 600; color: #3d4d35; text-decoration: underline; text-underline-offset: 3px;">Book →</a>
-                </div>
-                <div style="background: #fff; border-radius: 16px; padding: 1.5rem 1rem; text-align: center; box-shadow: 0 2px 12px rgba(61,77,53,0.06);">
-                  <div style="font-size: 2rem; margin-bottom: 0.6rem;">✨</div>
-                  <h4 style="font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.25rem;">Sound Bath Healing</h4>
-                  <p style="color: #7a8b6d; font-size: 0.75rem; margin-bottom: 0.5rem;">60 min · From $85</p>
-                  <a href="#" style="font-size: 0.75rem; font-weight: 600; color: #3d4d35; text-decoration: underline; text-underline-offset: 3px;">Book →</a>
-                </div>
+              </div>
+            </div>
+          </div>
+          <div class="demo-panel" data-demo-panel="contact">
+            <div class="demo-grid demo-grid--2">
+              <div class="demo-card">
+                <h4>Contact Serenova</h4>
+                <form class="demo-form-grid" style="margin-top:0.85rem;">
+                  <div class="form-group"><label class="form-label" for="spa-email">Email</label><input class="form-input" id="spa-email" type="email" value="hello@serenovaspa.com"></div>
+                  <div class="form-group"><label class="form-label" for="spa-message">Message</label><textarea class="form-textarea" id="spa-message">I'm interested in booking a couples massage next month.</textarea></div>
+                  <button class="btn btn-primary" type="button">Send Inquiry</button>
+                </form>
+              </div>
+              <div class="demo-card">
+                <h4>Studio Info</h4>
+                <ul style="margin-top:0.8rem; list-style:none; display:grid; gap:0.55rem;">
+                  <li><strong>Address:</strong> 211 Garden Street, Columbus, OH</li>
+                  <li><strong>Hours:</strong> Tue-Sun, 9:00 AM - 7:00 PM</li>
+                  <li><strong>Gift cards:</strong> Available online, instantly delivered by email</li>
+                </ul>
+                <div class="demo-faux-map" style="margin-top:1rem;"></div>
               </div>
             </div>
           </div>
