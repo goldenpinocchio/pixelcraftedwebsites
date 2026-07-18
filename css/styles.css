@@ -449,8 +449,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav-logo .logo-wordmark {
-  width: clamp(245px, 22vw, 390px);
-  max-height: 78px;
+  width: clamp(320px, 25vw, 460px);
+  max-height: 110px;
   object-fit: contain;
   height: auto;
   display: block;
@@ -736,8 +736,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   }
 
   .nav-logo .logo-wordmark {
-    width: min(52vw, 180px);
-    max-height: 48px;
+    width: min(68vw, 250px);
+    max-height: 76px;
   }
 
   .nav-actions {
@@ -841,22 +841,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .style-switcher-row {
     display: grid;
-    grid-template-columns: repeat(4, 30px);
+    grid-template-columns: repeat(8, 30px);
     gap: 0.35rem;
   }
 }
 
 @media (min-width: 769px) and (max-width: 920px) {
   .nav-logo .logo-wordmark {
-    width: clamp(220px, 31vw, 300px);
+    width: clamp(300px, 38vw, 380px);
   }
 
   .nav-actions {
     gap: 0.55rem;
-  }
-
-  .style-switcher-row {
-    grid-template-columns: repeat(2, 30px);
   }
 }
 
